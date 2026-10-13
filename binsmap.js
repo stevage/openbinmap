@@ -311,8 +311,8 @@ $(function() {
     attribution = 'Steve Bennett + Geelong, Wyndham, Golden Plains, Ballarat, Manningham councils';
     var updated = '11';
     
-    tiles['Basemap'] = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
-        attribution: 'CartoDB, OpenStreetMap'});
+    tiles['Basemap'] = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri'});
     
     /*
     tiles['Rubbish'] = L.tileLayer('//guru.cycletour.org/tile/openbins-rubbish/{z}/{x}/{y}.png?updated=' + updated, { 
